@@ -4,53 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculer</title>
-    <link rel="stylesheet" href="Calucatraise.css">
+    <title>calcule2</title>
+    <link rel="stylesheet" href="indexCalcule.css">
 </head>
 <body>
-    <section>
-        <table>
-            <tr>
-                <td  class="td1" >
-                    <button class="drk" onclick="dark()">dark</button>
-                    <button class="ligt" onclick="ligt()">light</button>
-                </td>
-                <td colspan="3" class="td2">elghandouri</td>
-            </tr>
-            <tr>
-                <td colspan="4"> <input type="text" id="idnomber" class="classenmber"></td>
-            </tr>
-            <tr>
-                <td><button onclick="ac()">C</button></td>
-                <td><button onclick="afiche('+')">+</button></td>
-                <td><button onclick="afiche('*')">x</button></td>
-                <td><button onclick="afiche('-')">-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="afiche('7')" class="a1">7</button></td>
-                <td><button onclick="afiche('8')" class="a1">8</button></td>
-                <td><button onclick="afiche('9')" class="a1">9</button></td>
-                <td><button onclick="afiche('/')">/</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="afiche('4')" class="a1">4</button></td>
-                <td><button onclick="afiche('5')" class="a1">5</button></td>
-                <td><button onclick="afiche('6')" class="a1">6</button></td>
-                <td><button onclick="squer()">&radic;</button></td>
-            </tr>
-            <tr>
-                <td> <button onclick="afiche('1')" class="a1">1</button></td>
-                <td> <button onclick="afiche('2')" class="a1">2</button></td>
-                <td> <button onclick="afiche('3')" class="a1">3</button></td>
-                <td rowspan="2"> <button onclick="calc()" class="tosawi">=</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="afiche('.')">.</button></td>
-                <td><button onclick="afiche('0')" class="a1">0</button></td>
-                <td><button onclick="doubl()">x<sup>2</sup></button></td>
-            </tr>
-        </table>
-    </section>
-    <script src="Calucatraise.js"></script>
+    <div class="container">
+        <from> 
+          <input type='text' id="val" />
+        </from>
+          <div class='keypad'>
+            <button class='del' onclick="clearAll()">DEL</button>
+            <button class='c' onclick="clerr()" >C</button>
+            <button  class='opr' onclick="afichage('/')">&divide;</button>
+            <button  class='opr' onclick="afichage('*')">x</button>
+            <button  onclick="afichage('1')">1</button>
+            <button  onclick="afichage('2')">2</button>
+            <button  onclick="afichage('3')">3</button>
+            <button  class='opr' onclick="afichage('+')">+</button>
+            <button  onclick="afichage('4')">4</button>
+            <button  onclick="afichage('5')">5</button>
+            <button  onclick="afichage('6')">6</button>
+            <button  class='opr' onclick="afichage('-')">-</button>
+            <button  onclick="afichage('7')">7</button>
+            <button  onclick="afichage('8')">8</button>
+            <button  onclick="afichage('9')">9</button>
+            <button id='egl'onclick="calcule()" >=</button>
+            <button class='opr' onclick="afichage('.')">.</button>
+            <button  onclick="afichage('0')">0</button>
+            <button class='opr' onclick="squar()">x<sup>2</sup></button>
+          </div>
+        </div>
+        <script src="indexCalcule.js"></script>
 </body>
 </html>
